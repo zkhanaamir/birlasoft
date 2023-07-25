@@ -1,0 +1,117 @@
+.container{
+    max-width: 128rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond(mobile) {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+}
+
+h1{
+    display: none;
+}
+
+.page-heading-2{
+    font-size: $font-size-xl;
+    line-height: $lh-31;
+    color: $color-base;
+    text-align: center;
+    position: relative;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 7.3rem;
+        height: 2px;
+        background-color: $color-base;
+        margin: 2rem auto 0;
+    }
+}
+
+.description{
+    font-size: $font-size-m;
+    line-height: $lh-31;
+}
+
+.info{
+    font-size: $font-size-m;
+    line-height: $lh-31;
+    a{
+        color: $color-link-text;
+    }
+}
+
+.btn{
+    font-size: $font-size-l;
+    text-align: center;
+    display: inline-block;
+    color: $color-orange;
+    cursor: pointer;
+    &:active,
+    &:focus{
+        outline: 0;
+        outline-offset: 0;
+    }
+
+    &--orange{
+        color: $color-white;
+        background-color: $color-orange;
+        padding: 1.3rem 2.3rem;
+        border: 1px solid transparent;
+        transition: all 0.35s linear;
+
+        &:hover{
+            color: $color-orange;
+            background-color: $color-white;
+            border: 1px solid $color-orange;
+        }
+    }
+}
+
+.link{
+    display: inline-block;
+    &--underline{
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: $color-primary-text;
+            transform:  scaleX(0);
+            transition: transform .5s ease;
+            transform-origin: left;
+          }
+        &:hover::before {
+            transform:  scaleX(1);
+        }
+    }
+
+    &--fill{
+        position: relative;
+        padding: 0.1rem 0.2rem;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $color-secondary-text;
+            left: 0;
+            bottom: 0;
+            transition: height .5s ease;
+        }
+        &:hover::before {
+            height: 100%;
+            z-index: -1;
+        }
+        &:hover{
+            color: $color-white;
+        }
+    }
+    
+}

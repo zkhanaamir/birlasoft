@@ -1,0 +1,18 @@
+{
+  "name": "bank-test",
+  "version": "1.0.0",
+  "description": "This file is for citizens test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aamir",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.6"
+  }
+}

@@ -1,0 +1,44 @@
+/* Header css */
+.header{
+    &__logo{
+        margin-top: 6.4rem;
+        margin-bottom: 5.3rem;
+        @include respond(mobile) {
+            text-align: center;
+        }
+    }
+    &__link{
+        display: inline-block;
+    }
+    &__img{
+        width: 31.7rem;
+        height: 3.5rem;
+    }
+}
+
+// footer css
+.footer{
+    padding-top: 3.6rem;
+    padding-bottom: 4.1rem;
+    border-top: 1px solid $color-base;
+
+    &__policy{
+        margin: 2.6rem 0;
+        font-size: $font-size-xs;
+        color: $color-secondary-text;
+    }
+
+    &__links{
+        display: flex;
+        a{
+            font-size: $font-size-s;
+            line-height: 1.6rem;
+            color: $color-black;
+            &:not(:last-child){
+                border-right: 1px solid $color-black;
+                padding-right: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

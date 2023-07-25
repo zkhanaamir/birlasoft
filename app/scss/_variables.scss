@@ -1,0 +1,35 @@
+/* Colors variables */
+$color-white: #fff;
+$color-black: #000;
+$color-base: #00945f;
+$color-base-light: #ebf7f5;
+/* According to psd
+    $color-primary-text: #888888;
+*/
+// ratio according to web accesibility checker
+$color-primary-text: #757575;
+
+$color-secondary-text: #666666;
+$color-orange: #e97300;
+
+/* According to psd
+$color-link-text: #759b24;
+*/
+
+// ratio according to web accesibility checker
+$color-link-text: #61801E;
+
+/* font family */
+$font-family-base: Arial, sans-serif;
+
+/* font-sizes */
+$font-size-xl: 3rem;   /* 30px */
+$font-size-l: 2.4rem;   /* 24px */
+$font-size-m: 1.8rem;   /* 18px */
+$font-size-s: 1.2rem;   /* 12px */
+$font-size-xs: 1.1rem;   /* 11px */
+$font-size--base: 1rem;    /* 10px */
+
+/* line-height */
+
+$lh-31: 3.1rem;

@@ -1,0 +1,29 @@
+// mixins
+@mixin page-heading-3($color){
+    color: $color;
+    font-size: $font-size-l;
+    line-height: $lh-31;
+    margin-bottom: 2.1rem;
+}
+
+// extends
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// breakpoints mixins
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 47.93em) { @content };    //767px
+    }
+    @if $breakpoint == tab {
+        @media only screen and (max-width: 63.93em) { @content };     //1023px
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 87.5em) { @content };    //1400
+    }
+}
